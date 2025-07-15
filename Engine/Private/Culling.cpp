@@ -10,13 +10,13 @@ CCulling::CCulling(LPDIRECT3DDEVICE9 pGraphic_Device)
 
 HRESULT CCulling::Initialize()
 {
-    // front - near 의 투영 좌표
+    // front - near
     m_CulVertices[0].vPosition = { -1.f,  1.f, 0.f };
     m_CulVertices[1].vPosition = {  1.f,  1.f, 0.f };
     m_CulVertices[2].vPosition = {  1.f, -1.f, 0.f };
     m_CulVertices[3].vPosition = { -1.f, -1.f, 0.f };
 
-    // back - far 의 투영 좌표
+    // back - far
     m_CulVertices[4].vPosition = { -1.f,  1.f, 1.f };
     m_CulVertices[5].vPosition = {  1.f,  1.f, 1.f };
     m_CulVertices[6].vPosition = {  1.f, -1.f, 1.f };
